@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-
+# tells the user what we think about person
 
 def index(request):
     return HttpResponse("This is a bad request you will be redirect.")

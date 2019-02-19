@@ -1,11 +1,8 @@
-from django.urls import path
+from django.urls import path,include
 
 from . import views
 
+# this is wear i put my code for the user to click on it to show up i linked it
 urlpatterns = [
     path('', views.index, name='index'),
-    path('music', views.music, name='artist'),
-    path('Wale', views.Wale, name='artist'),
-    path('usher', views.Usher, name='artist'),
-    path('Meek ', views.Meek, name='artist')
-]
+    path("music/", include("newsite.py"),
